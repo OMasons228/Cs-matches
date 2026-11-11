@@ -1,0 +1,17 @@
+```mermaid
+erDiagram
+    PLAYER ||--o| PLAYER_PROFILE : "имеет профиль"
+    PLAYER ||--o{ TEAM_MEMBERSHIP : "состоит в"
+    TEAM ||--o{ TEAM_MEMBERSHIP : "включает"
+    TOURNAMENT ||--o{ MATCH : "проводит"
+    TEAM ||--o{ MATCH : "играет в"
+    MATCH ||--o{ MAP_VETO : "проходит veto"
+    TEAM ||--o{ MAP_VETO : "делает pick или ban"
+    MAP ||--o{ MAP_VETO : "выбирается в"
+    MATCH ||--|{ MATCH_MAP : "состоит из"
+    MAP ||--o{ MATCH_MAP : "используется в"
+    MATCH_MAP ||--o{ PLAYER_MAP_STATS : "содержит статы"
+    PLAYER ||--o{ PLAYER_MAP_STATS : "показывает статы"
+    MATCH_MAP ||--o{ PLAYER_WEAPON_STATS : "содержит статы оружия"
+    PLAYER ||--o{ PLAYER_WEAPON_STATS : "использует"
+    WEAPON ||--o{ PLAYER_WEAPON_STATS : "учитывается в"
