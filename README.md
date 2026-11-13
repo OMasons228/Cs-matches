@@ -4,6 +4,8 @@
 @Шаймухаметов Азат Азаматович
 База данных статистики матчей в CS, с типами сущностей:Player, PlayerProfile, Team, TeamMembership, Tournament, Match, Map, MapVeto, MatchMap, PlayerMapStats, Weapon, PlayerWeaponStats
 
+На текущий момент созданы: КОНЦЕПТУАЛЬНАЯ и ЛОГИЧЕСКАЯ схемы
+
 
 CS-Matches — реляционная база данных для хранения, агрегации и аналитики статистики киберспортивных матчей в дисциплине Counter-Strike.
 
